@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assembled moble robot fold5">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.162274145504602 0.000732596929480435 0.001049653115971"
+        rpy="0 0 0" />
+      <mass
+        value="0.0127857677607466" />
+      <inertia
+        ixx="3.63604584881777E-08"
+        ixy="3.85340554226154E-08"
+        ixz="7.28173735493206E-08"
+        iyy="0.000309820066608132"
+        iyz="8.24134140601345E-10"
+        izz="0.000309785126309396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.166453899070633 -0.00442014918653488 0.000187865619513702"
+        rpy="0 0 0" />
+      <mass
+        value="1.71492523147387" />
+      <inertia
+        ixx="0.0280239638631239"
+        ixy="-1.39067589091845E-09"
+        ixz="-3.68523528134109E-06"
+        iyy="0.105928474299439"
+        iyz="-1.01563640135774E-08"
+        izz="0.0779224059346215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint0"
+    type="fixed">
+    <origin
+      xyz="0 -0.00768880580518062 0"
+      rpy="0 7.37265581573058E-05 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.080650685224449 0.000129050261299473 0.000707970224130534"
+        rpy="0 0 0" />
+      <mass
+        value="1.06209459731102" />
+      <inertia
+        ixx="0.0011530401909991"
+        ixy="-9.159071968707E-07"
+        ixz="2.81420199345777E-05"
+        iyy="0.00277990779146556"
+        iyz="-6.61222537775314E-07"
+        izz="0.00275580362696308" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="fixed">
+    <origin
+      xyz="0 0.156999999999959 0"
+      rpy="1.60291569695239 0 1.57079632679249" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.0437213084092657 -0.0286838263022234 0.025499511902183"
+        rpy="0 0 0" />
+      <mass
+        value="0.205754188132838" />
+      <inertia
+        ixx="0.000357284886803391"
+        ixy="6.30191940150228E-05"
+        ixz="0.000106885180043856"
+        iyy="0.000625270487788668"
+        iyz="-3.58974275356206E-05"
+        izz="0.000487918230941218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="fixed">
+    <origin
+      xyz="0.12600000017393 -0.0117500030687404 0"
+      rpy="3.14155423380812 0.523598775756648 -1.91950921929983E-05" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.31939868145217 -0.0120398868852246 -0.000645497897677177"
+        rpy="0 0 0" />
+      <mass
+        value="0.138787224303583" />
+      <inertia
+        ixx="0.000195185827770026"
+        ixy="6.37094270107107E-05"
+        ixz="3.50118796270783E-06"
+        iyy="0.000505658179331667"
+        iyz="1.8685317280877E-06"
+        izz="0.000472150571337717" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="fixed">
+    <origin
+      xyz="0.42075000000021 0 0"
+      rpy="-0.0552070026950291 0 -3.14159265358979" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.0435738257323355 -0.0245602359605788 0.0755001858050861"
+        rpy="0 0 0" />
+      <mass
+        value="0.138067690761035" />
+      <inertia
+        ixx="0.000850739406520817"
+        ixy="3.93773425581335E-05"
+        ixz="0.000378342885940364"
+        iyy="0.00110121649687143"
+        iyz="-6.8232596702204E-05"
+        izz="0.000413745894879402" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="fixed">
+    <origin
+      xyz="0 -0.0127500000000259 0"
+      rpy="0 -1.04719755119656 3.14159265358904" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.130958968515251 -0.0146828317624834 -0.00202032373197181"
+        rpy="0 0 0" />
+      <mass
+        value="0.109275296119279" />
+      <inertia
+        ixx="0.000112312807212263"
+        ixy="-5.72177145485614E-05"
+        ixz="-7.86398280461266E-06"
+        iyy="0.000422758491009592"
+        iyz="3.98298641580231E-06"
+        izz="0.000394675961439423" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="fixed">
+    <origin
+      xyz="0.210850101299815 0 0"
+      rpy="3.00350169072279 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="0.139998190236277 -0.0138157218758969 0.00198650524802757"
+        rpy="0 0 0" />
+      <mass
+        value="0.0607305544933731" />
+      <inertia
+        ixx="5.91291111671377E-05"
+        ixy="-2.20481553337362E-05"
+        ixz="-4.32084390380415E-06"
+        iyy="0.000140530538524268"
+        iyz="-1.20178609241877E-06"
+        izz="0.000137919584632756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="fixed">
+    <origin
+      xyz="0.206846309427517 -0.000350101300061079 0.00563829121044956"
+      rpy="0 0.054503224125792 -3.14159265358977" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="0.150244028841813 -0.0137055975853507 0.00254718528740672"
+        rpy="0 0 0" />
+      <mass
+        value="0.0607327818914366" />
+      <inertia
+        ixx="6.25161675032532E-05"
+        ixy="-3.01045947271107E-05"
+        ixz="-4.86754617781282E-06"
+        iyy="0.00015063712771063"
+        iyz="-1.64106182512488E-06"
+        izz="0.000151296162586479" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="fixed">
+    <origin
+      xyz="0.20685 -0.0003501 0.0056383"
+      rpy="0 0.054503 3.1416" />
+    <parent
+      link="link_7" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="-0.000349933979269856 0.0214262343227395 0.0402932211587096"
+        rpy="0 0 0" />
+      <mass
+        value="0.0661611015091618" />
+      <inertia
+        ixx="3.44497221448383E-05"
+        ixy="1.04104325252775E-07"
+        ixz="3.24451065713826E-07"
+        iyy="5.02597257180808E-05"
+        iyz="1.74226266653188E-07"
+        izz="6.20749541643363E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="fixed">
+    <origin
+      xyz="0.21176 -0.0003501 0.0059066"
+      rpy="0.77569 1.4944 0.77715" />
+    <parent
+      link="link_8" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_10">
+    <inertial>
+      <origin
+        xyz="9.47871827894353E-06 0.0435497551054141 -2.67729666829086E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.299007856338707" />
+      <inertia
+        ixx="0.000192799825860682"
+        ixy="-7.52321035615327E-09"
+        ixz="-8.74384397612958E-09"
+        iyy="0.000146386919186832"
+        iyz="-1.13339041145091E-07"
+        izz="0.000217155956158654" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assembled moble robot fold5/meshes/link_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="fixed">
+    <origin
+      xyz="0 0 0.058051"
+      rpy="1.5708 0 -3.0925" />
+    <parent
+      link="link_9" />
+    <child
+      link="link_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,4 @@
+#ignore the Library, Logs and Temp folders
+/library/
+/Logs/
+/Temp
